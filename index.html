@@ -18,108 +18,306 @@
                 <p class="author">By Derek Gallagher</p>
                 <!-- Replace with actual project overview or hook -->
             </div>
-            <div class="hero-image">
-                <img src="images/placeholder1.png" alt="Project Hero Image or Principal Persona" width="800" height="400">
-            </div>
         </div>
     </header>
 
     <main>
-        <!-- Section 1 — User Research & Personas -->
-        <section id="research" class="section">
+        <!-- Table of Contents -->
+        <section id="toc" class="section">
             <div class="container">
-                <h2>1. User Research & Personas</h2>
-                <div class="content-block">
-                    <h3>Research Methods</h3>
-                    <p>
-                        Poop
-                    </p>
-                    <p>
-                        Poop
-                    </p>
-                </div>
-                
-                <div class="content-block">
-                    <h3>Personas</h3>
-                    <div class="image-container">
-                        <img src="images/placeholder1.png" width="800" height="400">
-                        <p class="caption">Figure 1.1: Poop.</p>
+                <h2>Table of Contents</h2>
+                <ul class="styled-list">
+                    <li><a href="#introduction">1. Introduction</a></li>
+                    <li><a href="#research">2. User Research & Personas</a></li>
+                    <li><a href="#journey-map">3. User Journey Mapping</a></li>
+                    <li><a href="#design-process">4. Design Process (Sketches, Flows, Storyboards)</a></li>
+                    <li><a href="#wireframes">5. Wireframes & Prototype</a></li>
+                    <li><a href="#usability-testing">6. Usability Testing</a></li>
+                    <li><a href="#reflection">7. Reflection</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 1 — Introduction -->
+        <section id="introduction" class="section">
+            <div class="container">
+                <h2>1. Introduction</h2>
+                <p>
+                    People with chronic health conditions are forced to constantly manage medication and doctors’ appointments. A lot of these people struggle in juggling all these events and can sometimes forget some. This can lead to worsening conditions or issues that can affect these people negatively.
+                </p>
+                <p>
+                    The goal of the Health Companion Super App is to be able to help these users that have chronic health conditions to better manage their medication and doctor appointments. This will be done through multiple strategies like setting reminders, tracking medication usage, and communicating directly with the healthcare professionals.
+                </p>
+                <div class="two-col-grid">
+                    <div class="col">
+                        <h3>Problem Statement</h3>
+                        <p>Managing health responsibilities frequently causes stress, anxiety, confusion, and frustration. Common problems include uncertainty about whether medication was taken, notifications blending with other alerts, and difficulty tracking multiple responsibilities.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Goal Strategy</h3>
+                        <p>This case study will focus on designing a good UI/UX to understand users needs to ultimately create a very clean, accessible and intuitive mobile application that can be easily used by anybody.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 2 — User Journey Map -->
-        <section id="journey-map" class="section alt-bg">
+        <!-- Section 2 — User Research & Personas -->
+        <section id="research" class="section alt-bg">
             <div class="container">
-                <h2>2. User Journey Map</h2>
-                <p class="section-intro">
-                    poop.
-                </p>
-                <div class="image-container large-image">
-                    <img src="images/placeholder2.png" width="800" height="600">
-                    <p class="caption">Figure 2.1: Poop.</p>
+                <h2>2. User Research & Personas</h2>
+                
+                 <div class="content-block">
+                    <h3>2.1 Research Methods</h3>
+                    <p>
+                        The objectives of this research are to understand better how people which chronic health conditions manage their medication and appointment schedules and to identify any possible pain points in this current process.
+                    </p>
+                    <p>
+                        To collect data, the following method was used:
+                    </p>
+                    <ul class="styled-list">
+                        <li><strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSe4xhn7VnUq6em8raW8sR2sqwWO7zApRr8bm53VnX-bnmQxSg/viewform?usp=dialog ">Online Survey: </a></strong>11 responses collected.</li>
+                    </ul>
+                    <h3>Key Detailed Findings</h3>
+                     <ul class="styled-list">
+                        <li>
+                            Users have levels of medication that vary, which means the solution must support both frequent and occasional medicine takers rather than targeting only chronic patients.
+                            <br>
+                            <iframe width="500" height="300" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvEb4T2ghHiW7jayAn2psDosIYaSYMEpGdpyNt1ZWE-z21v_Zhebn4N7bmZha3LiOHMEbD6gA_2UEY/pubchart?oid=1147339615&amp;format=interactive"></iframe>
+                        </li><br><br>
+                        <li>
+                            Users primarily rely on memory, other people, or simple tools (pill boxes, calendars) to manage their health tasks instead of health applications.
+                            <br>
+                            <iframe width="500" height="300" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvEb4T2ghHiW7jayAn2psDosIYaSYMEpGdpyNt1ZWE-z21v_Zhebn4N7bmZha3LiOHMEbD6gA_2UEY/pubchart?oid=1481731032&amp;format=interactive"></iframe>
+                        </li><br><br>
+                        <li>
+                            Users would prefer to be contacted by either text message, email or push notification.
+                            <br>
+                            <iframe width="500" height="300" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvEb4T2ghHiW7jayAn2psDosIYaSYMEpGdpyNt1ZWE-z21v_Zhebn4N7bmZha3LiOHMEbD6gA_2UEY/pubchart?oid=1750445143&amp;format=interactive"></iframe>
+                        </li><br><br>
+                        <li>
+                            Many users believe they are organized but still forget appointments, showing a gap between perceived organization and actual behavior.
+                            <br>
+                            <iframe width="563" height="300" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvEb4T2ghHiW7jayAn2psDosIYaSYMEpGdpyNt1ZWE-z21v_Zhebn4N7bmZha3LiOHMEbD6gA_2UEY/pubchart?oid=973639503&amp;format=interactive"></iframe>
+                        </li>
+                    </ul>
+                    
+                    <h3>Pain Points</h3>
+                    <iframe width="588" height="300" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvEb4T2ghHiW7jayAn2psDosIYaSYMEpGdpyNt1ZWE-z21v_Zhebn4N7bmZha3LiOHMEbD6gA_2UEY/pubchart?oid=735855315&amp;format=interactive"></iframe>
+                    <p>Some of the other charts from the survey show that users usually communicate with their doctors through phone calls and that they rarely prepare questions beforehand. Users also specify that their health information is spread across multiple places rather than tracked in a single system, and these behaviors appear across multiple age groups, appearing mostly in the 45-55 age range.</p>
+
+                    <h3>Needs Identified</h3>
+                    <ul class="styled-list">
+                        <li>Clear confirmation after completing a health task.</li>
+                        <li>Smart reminders that stand out without being excessive.</li>
+                        <li>A centralized dashboard for medications and appointments.</li>
+                        <li>Participants strongly value having health information organized in one place.</li>
+                    </ul>
+                    <iframe width="694" height="300" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvEb4T2ghHiW7jayAn2psDosIYaSYMEpGdpyNt1ZWE-z21v_Zhebn4N7bmZha3LiOHMEbD6gA_2UEY/pubchart?oid=1189760015&amp;format=interactive"></iframe>
+                </div>
+                
+                <div class="content-block">
+                    <h3>2.2 Personas</h3>
+                    <p>Two personas were designed to create realistic user profiles that represent the target audience.</p>
+                    <!-- Persona 1 -->
+                    <div class="image-container">
+                        <img src="images/persona1.png" alt="Donald Grump Profile" width="800" height="400">
+                    </div>
+
+                    <!-- Persona 2 -->
+                    <div class="image-container">
+                        <img src="images/persona2.png" alt="Tom Tolland Profile" width="800" height="400">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 3 — Wireframes & Prototype -->
+        <!-- Section 3 — User Journey Map -->
+        <section id="journey-map" class="section">
+            <div class="container">
+                <h2>3. User Journey Mapping</h2>
+                <p class="section-intro">
+                    Leave blank for now.
+                </p>
+
+                <!-- Journey Map 1 -->
+                <div class="image-container large-image">
+                    <h3>Journey Map: [Persona 1 Name]</h3>
+                    <img src="images/placeholder_journey1.png" alt="User Journey Map for Persona 1" width="800" height="600">
+                    <p class="caption">Figure 3.1: Journey Map for Donald Grump.</p>
+                </div>
+
+                <!-- Journey Map 2 -->
+                <div class="image-container large-image">
+                    <h3>Journey Map: [Persona 2 Name]</h3>
+                    <img src="images/placeholder_journey2.png" alt="User Journey Map for Persona 2" width="800" height="600">
+                    <p class="caption">Figure 3.2: Journey Map for Tom Tolland.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 — Design Process -->
+        <section id="design-process" class="section alt-bg">
+            <div class="container">
+                <h2>4. Design Process & Visuals</h2>
+                
+                <div class="content-block">
+                    <h3>4.1 Sketches</h3>
+                    <p>Initial sketches focused on simplifying user interaction. The home screen shows today's medications and upcoming appointments briefly. Other features include tracking your schedule (for medication, appointments and reminders), and making calls to doctors.</p>
+                    <div class="grid-gallery">                     
+                            <img src="images/Sketch.jpeg" alt="Initial Sketch 1" style="max-width: 60%; margin: 0 auto;">
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h3>4.2 User Flow Chart</h3>
+                    <p>Leave blank for now.</p>
+                    <div class="image-container">
+                        <img src="images/placeholder_userflow.png" alt="User Flow Chart" width="800" height="500">
+                        <p class="caption">Figure 4.1: User Flow for [Primary Task, e.g., Booking an Appointment].</p>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h3>4.3 Storyboard</h3>
+                    <p>Leave blank for now.</p>
+                    <div class="image-container">
+                        <img src="images/placeholder_storyboard.png" alt="Storyboard" width="800" height="400">
+                        <p class="caption">Figure 4.2: Storyboard illustrating the problem and solution in a real-world scenario.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 — Wireframes & Prototype -->
         <section id="wireframes" class="section">
             <div class="container">
-                <h2>3. Wireframes & Prototype</h2>
-                <p class="section-intro">
-                    Poop.
-                </p>
+                <h2>5. Wireframes & Prototype</h2>
                 
-                <div class="grid-gallery">
-                    <div class="grid-item">
-                        <img src="images/placeholder2.png" alt="Low Fidelity Wireframe - Home">
-                        <p>Poop Wireframe</p>
+                <div class="content-block">
+                    <h3>5.1 Low-Fidelity Wireframes</h3>
+                    <p>
+                        Low-fidelity wireframes were created for:
+                    </p>
+                    <ul class="styled-list">
+                        <li>Home dashboard</li>
+                        <li>Health Log (appointments, medication, reminders)</li>
+                        <li>Communications screen</li>
+                        <li>Calendar view (month or day) of upcoming events</li>
+                    </ul>
+                    <div class="image-container">
+                        <h3>5.1 Low-Fidelity Wireframes</h3>
+                        <div class="gallery-row wireframe-gallery">
+                            <div class="gallery-item">
+                                <img src="images/wireframe1.png" alt="Home Screen Wireframe">
+                                <p>Dashboard, Health Log, Communications</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/wireframe2.png" alt="Health Log Wireframe">
+                                <p>Calendar Views</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h3>5.2 High-Fidelity Prototype</h3>
+                    <p>
+                        A clickable prototype was developed in Figma demonstrating:
+                    </p>
+                    <ul class="styled-list">
+                        <li>A dashboard with Medication reminders, Quick Actions, Contacts, Health Insights.</li>
+                        <li>Health Log with Appointments bookings, Medication Tracking, Reminders.</li>
+                        <li>Communication with doctors.</li>
+                        <li>Calendar view for upcoming events.</li>
+                    </ul>
+                    <p>The design prioritizes clarity, large buttons, and minimal steps.</p>
+                    <div class="image-container">
+                        <h3>High-Fidelity Prototype</h3>
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <iframe style="border: 1px solid rgba(255, 255, 255, 0.1);" width="300" height="500" src="https://embed.figma.com/proto/c75DhDrmNBmV41sBD4gSsW/SOEN357-MP1?page-id=0%3A1&node-id=1-7&p=f&viewport=-61%2C-989%2C0.85&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A7&embed-host=share" allowfullscreen></iframe>
+                        </div>
+                        <div class="vertical-stack">
+                            <div class="gallery-item">
+                                <img src="images/Prototype1.png" alt="Prototype Screen 1" width="800" height="500">
+                                <p class="caption">Dashboard</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/Prototype2.png" alt="Prototype Screen 2" width="800" height="500">
+                                <p class="caption">Health Log</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/Prototype3.png" alt="Prototype Screen 3" width="800" height="500">
+                                <p class="caption">Communications</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4 — Usability Testing -->
+        <!-- Section 6 — Usability Testing -->
         <section id="usability-testing" class="section alt-bg">
             <div class="container">
-                <h2>4. Usability Testing</h2>
+                <h2>6. Usability Testing</h2>
                 <div class="content-block">
-                    <p>
-                        Poop
-                    </p>
-                    
-                    <h3>Test Goals</h3>
+                    <h3>6.1 Test Plan</h3>
+                    <p>5 willing participants interacted with the prototype.</p>
                     <ul class="styled-list">
-                        <li>Poop</li>
+                        <li><strong>Tasks:</strong>
+                            <ol style="margin-top: 0.5rem; margin-left: 1rem;">
+                                <li>Add a medication</li>
+                                <li>Set an appointment</li>
+                                <li>Create a reminder</li>
+                                <li>Call a doctor</li>
+                            </ol>
+                        </li>
                     </ul>
-
-                    <h3>Feedback Summary</h3>
+                    
+                    <h3>6.2 Feedback Summary & Iteration</h3>
                     <ul class="styled-list">
-                        <li>Poop</li>
+                        <li><strong>Observations:</strong>
+                            <ul style="margin-top: 0.5rem; list-style-type: disc; margin-left: 1rem;">
+                                <li>Users easily understood the buttons</li>
+                                <li>Some users missed the health log tab</li>
+                                <li>Older users preferred larger text and less buttons</li>
+                            </ul>
+                        </li>
+                        <li><strong>Improvements:</strong>
+                            <ul style="margin-top: 0.5rem; list-style-type: disc; margin-left: 1rem;">
+                                <li>Increased button size</li>
+                                <li>Added confirmation feedback</li>
+                                <li>Simplified navigation labels</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Section 5 — Reflection -->
+        <!-- Section 7 — Reflection -->
         <section id="reflection" class="section">
             <div class="container">
-                <h2>5. Reflection</h2>
-                <p>
-                    poop
-                
+                <h2>7. Reflection</h2>
                 <div class="two-col-grid">
                     <div class="col">
                         <h3>Challenges</h3>
                         <p>
-                            Poop
+                            A key challenge was to design the prototype to be a good fit for both older people and younger people. This was addressed by prioritizing UI clarity.
+                        </p>
+                        <p>
+                            Balancing a simplistic view for older and less tech-savvy users while also keeping a modern interface for younger users was also a key challenge during the design process.
                         </p>
                     </div>
                     <div class="col">
                         <h3>Lessons Learned</h3>
                         <p>
-                            Poop
+                            The UX/UI design process has helped show that users want simplicity more than complicated UI with advances features. Initially, the prototype had a dashboard that was a lot more clustered, but testing shows this overwhelms users.
+                        </p>
+                        <p>
+                            The best and most important improvement that I made was reducing the cognitive load by showing only essential information on the home screen.
+                        </p>
+                        <p>
+                            The iterative process improved the usability for the users and also showed the importance of testing early to identify the usability issues.
                         </p>
                     </div>
                 </div>
