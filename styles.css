@@ -454,7 +454,35 @@ td:first-child {
         font-size: 1.75rem;
     }
 
+
+
     .hero-section {
         padding: 4rem 0 2rem;
     }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+
+    .gallery-item {
+        min-width: 100%;
+    }
+
+    .responsive-chart {
+        display: none;
+    }
+}
+
+/* Responsive Charts */
+.responsive-chart {
+    width: 100%;
+    height: 300px;
+    /* Default height, can be adjusted */
+    border: none;
 }
